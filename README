@@ -1,0 +1,8 @@
+ZBar
+==========
+
+This is a MonoTouch binding for the ZBar iOS SDK which can be found at
+
+     http://zbar.sourceforge.net/iphone/sdkdoc/index.html
+
+The current version of this binding is for ZBar iOS SDK 1.2
