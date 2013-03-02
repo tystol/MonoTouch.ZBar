@@ -6,3 +6,15 @@ This is a MonoTouch binding for the ZBar iOS SDK which can be found at
      http://zbar.sourceforge.net/iphone/sdkdoc/index.html
 
 The current version of this binding is for ZBar iOS SDK 1.2
+
+
+Using ZBar.dll within your iOS apps
+===================================
+
+Add the ZBar.dll to your project's References list.
+
+For Release builds, currently the native linker has to be explicitly configured to not strip the NSDictionary key constants. Add the following to the 'additional mtouch arguments' section of the iPhone Build project settings:
+--nosymbolstrip=ZBarReaderControllerResults
+
+See here for details:
+http://stackoverflow.com/questions/15150412/
