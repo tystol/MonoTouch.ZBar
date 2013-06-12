@@ -10,17 +10,21 @@ The current version of this binding is for ZBar iOS SDK 1.2
   Compiling ZBar.dll
 ======================
 
-This binding hasn't been updated since the move from MonoDevelop to Xamarin Studio. If having trouble building via XS, see here:
+This binding hasn't been updated since the move from MonoDevelop to Xamarin Studio.
+If having trouble building via XS, see here:
 https://github.com/Its-Tyson/MonoTouch.ZBar/issues/2
 
-Otherwise, simply drop the libzbar.a file into the /binding directory and run the makefile or open and compile the ZBar.MonoTouch.sln
+Otherwise, simply drop the libzbar.a file into the /binding directory and run the
+makefile or open and compile the ZBar.MonoTouch.sln
 
   Using ZBar.dll within your iOS apps
 =======================================
 
 Add the ZBar.dll to your project's References list.
 
-For Release builds, currently the native linker has to be explicitly configured to not strip the NSDictionary key constants. Add the following to the 'additional mtouch arguments' section of the iPhone Build project settings:
+For Release builds, currently the native linker has to be explicitly configured to
+not strip the NSDictionary key constants. Add the following to the 'additional mtouch arguments'
+section of the iPhone Build project settings:
 --nosymbolstrip=ZBarReaderControllerResults
 
 See here for details:
