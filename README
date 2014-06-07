@@ -12,7 +12,7 @@ The current version of this binding is for ZBar iOS SDK 1.2
 
 This binding hasn't been updated since the move from MonoDevelop to Xamarin Studio.
 If having trouble building via XS, see here:
-https://github.com/Its-Tyson/MonoTouch.ZBar/issues/2
+https://github.com/tystol/MonoTouch.ZBar/issues/2
 
 Otherwise, simply drop the libzbar.a file into the /binding directory and run the
 makefile or open and compile the ZBar.MonoTouch.sln
